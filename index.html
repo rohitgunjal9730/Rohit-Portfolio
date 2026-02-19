@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit Kisan Gunjal – Developer Portfolio</title>
+
+  <!-- SEO & Social Preview -->
+  <meta name="description"
+    content="Portfolio of Rohit Kisan Gunjal, a Computer Engineering student and Full Stack Developer specializing in Java, Spring Boot, .NET Core, and React.">
+  <meta property="og:title" content="Rohit Kisan Gunjal – Software Engineer Portfolio">
+  <meta property="og:description"
+    content="Building robust, scalable full-stack web applications. View my projects and technical expertise.">
+  <meta property="og:image" content="Rohit_Profile.JPG">
+  <meta property="og:type" content="website">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- HERO -->
+  <section class="hero" style="padding: 0;">
+    <div class="hero-left">
+      <div class="live-status">
+        <div class="pulse-dot"></div>
+        Available for Opportunities
+      </div>
+      <div class="hero-tag">I am a <span class="typewriter-text"></span></div>
+      <h1 class="hero-name">
+        Rohit<br>Kisan<br><span>Gunjal</span>
+      </h1>
+      <p class="hero-role">
+        <strong>B.Tech Computer Engineering</strong> · GH Raisoni College, Pune<br>
+        Building robust, scalable full-stack web applications
+      </p>
+      <div class="hero-contacts">
+        <a class="contact-item" href="tel:9730607012"><span class="icon">📞</span>9730607012</a>
+        <a class="contact-item" href="mailto:gunjalrohitk9730@gmail.com"><span
+            class="icon">✉</span>gunjalrohitk9730@gmail.com</a>
+        <a class="contact-item" href="https://linkedin.com/in/rohit-gunjal" target="_blank"><span
+            class="icon">in</span>linkedin.com/in/rohit-gunjal</a>
+        <a class="contact-item" href="https://github.com/rohitgunjal9730" target="_blank"><span
+            class="icon">⌥</span>github.com/rohitgunjal9730</a>
+      </div>
+      <div class="hero-btns">
+        <a href="Rohit_Gunjal_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+        <a href="#projects" class="btn btn-secondary">View Projects</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-grid"></div>
+      <span class="float-tag">Java · Spring Boot</span>
+      <span class="float-tag">React JS</span>
+      <span class="float-tag">.NET Core</span>
+      <!-- Profile Image Container -->
+      <div class="hero-profile-container">
+        <img src="Rohit_Profile.JPG" alt="Rohit Gunjal" class="hero-profile-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- SUMMARY -->
+  <section id="summary"
+    style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="section-label">Professional Summary</div>
+    <div style="max-width: 860px;">
+      <p style="font-size: 18px; line-height: 1.8; color: var(--text); font-weight: 300;">
+        Computer Engineering undergraduate with strong foundations in <strong style="color:var(--accent)">Data
+          Structures, Java, and Full-Stack Development</strong>. Experienced in building scalable web applications and
+        REST APIs using <strong style="color:var(--accent)">Spring Boot, .NET Core, and React</strong>. Passionate about
+        problem-solving and writing clean, efficient, and maintainable code. Seeking an entry-level <strong
+          style="color:var(--accent)">Software Engineer</strong> role to contribute technical expertise and grow in a
+        dynamic environment.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section" id="skills">
+    <div class="section-label">Technical Skills</div>
+    <h2 class="section-title">Skills &amp; Technologies</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card-icon">💻</div>
+        <div class="skill-card-title">Programming Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">C#</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">🌐</div>
+        <div class="skill-card-title">Frontend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">Bootstrap</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">⚙</div>
+        <div class="skill-card-title">Backend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Spring Boot</span>
+          <span class="skill-tag">Express.js</span>
+          <span class="skill-tag">.NET Core Web API</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">Microservices</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">🛢</div>
+        <div class="skill-card-title">Database & Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Eclipse</span>
+          <span class="skill-tag">Node.js</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">🧠</div>
+        <div class="skill-card-title">Concepts</div>
+        <div class="skill-tags">
+          <span class="skill-tag">OOP</span>
+          <span class="skill-tag">DSA</span>
+          <span class="skill-tag">Microservices</span>
+          <span class="skill-tag">REST APIs</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-label">Education</div>
+    <h2 class="section-title">Academic Background</h2>
+    <div class="edu-timeline">
+      <div class="edu-item">
+        <div class="edu-year">2021 – 2025</div>
+        <div>
+          <div class="edu-degree">B.Tech – Computer Engineering</div>
+          <div class="edu-inst">G H Raisoni College of Engineering &amp; Management, Pune · Savitribai Phule Pune
+            University</div>
+          <span class="edu-badge">⭐ CGPA: 8.18 · First Division</span>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">Feb 2021</div>
+        <div>
+          <div class="edu-degree">HSC (Class XII) – PCMB</div>
+          <div class="edu-inst">Shri Dhokeshwar Vidyalay &amp; Junior College, Takali Dhokeshwar</div>
+          <span class="edu-badge">⭐ 81.50% · First Division</span>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">March 2019</div>
+        <div>
+          <div class="edu-degree">SSC (Class X)</div>
+          <div class="edu-inst">Shree Hareshwar Vidyalaya, Karjule Harya</div>
+          <span class="edu-badge">⭐ 89.20% · First Division</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-strip">
+      <div class="info-item"><span class="info-label">Date of Birth</span><span class="info-value">24 May 2003</span>
+      </div>
+      <div class="info-item"><span class="info-label">Gender</span><span class="info-value">Male</span></div>
+      <div class="info-item"><span class="info-label">Nationality</span><span class="info-value">Indian</span></div>
+      <div class="info-item"><span class="info-label">Languages</span><span class="info-value">English, Marathi,
+          Hindi</span></div>
+      <div class="info-item"><span class="info-label">Hobbies</span><span class="info-value">Cricket · Online
+          Games</span></div>
+      <div class="info-item"><span class="info-label">Certification</span><span class="info-value">Alpha DSA – Apna
+          College</span></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section" id="projects">
+    <div class="section-label">Projects</div>
+    <h2 class="section-title">Academic Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-number">01</div>
+        <div class="project-icon">🚗</div>
+        <div class="project-title">Rent-It: Vehicle Rental System</div>
+        <p class="project-desc">A full-stack web application to simplify and automate vehicle rentals. Users can create
+          accounts, securely log in, browse bikes and cars, and book based on real-time availability. An admin module
+          handles vehicles, users, bookings and pricing. Built with a Microservices architecture using Spring Boot REST
+          API and .NET Core Web API communicating via separate services.</p>
+        <div class="project-tech">
+          <span class="tech-chip">Java</span>
+          <span class="tech-chip">C#</span>
+          <span class="tech-chip">.NET Core Web API</span>
+          <span class="tech-chip">Entity Framework</span>
+          <span class="tech-chip">Spring Boot</span>
+          <span class="tech-chip">Microservices</span>
+          <span class="tech-chip">React JS</span>
+          <span class="tech-chip">MySQL</span>
+          <span class="tech-chip">GitHub</span>
+        </div>
+        <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:8px;">
+          <a href="https://github.com/p20rentit/Rent-It" target="_blank" class="project-link">View on GitHub →</a>
+          <a href="https://hub.docker.com/repositories/rohitgunjal9730" target="_blank" class="project-link">Docker Hub
+            →</a>
+          <span
+            style="font-size:12px; color:var(--muted); font-family:'DM Mono',monospace; align-self:center;">Duration: 1
+            Month</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-number">02</div>
+        <div class="project-icon">🌊</div>
+        <div class="project-title">FLOODGUARD: IoT Flood Detection</div>
+        <p class="project-desc">Real-time IoT flood detection and alert system monitoring water levels using ultrasonic
+          sensors, float switches, and FSR. Arduino and ESP32 microcontrollers process sensor data and push it to
+          ThingSpeak and Blynk cloud dashboards for live monitoring. SIM800L GSM module sends instant SMS alerts at Low,
+          Medium, High and Critical thresholds. Low-power, scalable and suitable for flood-prone regions.</p>
+        <div class="project-tech">
+          <span class="tech-chip">ESP32</span>
+          <span class="tech-chip">Arduino</span>
+          <span class="tech-chip">Ultrasonic Sensor</span>
+          <span class="tech-chip">FSR</span>
+          <span class="tech-chip">SIM800L GSM</span>
+          <span class="tech-chip">ThingSpeak</span>
+          <span class="tech-chip">Blynk</span>
+          <span class="tech-chip">IoT</span>
+        </div>
+        <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:8px;">
+          <span
+            style="font-size:12px; color:var(--muted); font-family:'DM Mono',monospace; align-self:center;">Duration: 6
+            Months</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-number">03</div>
+        <div class="project-icon">💰</div>
+        <div class="project-title">Employee Payroll System</div>
+        <p class="project-desc">Java-based payroll management system automating salary calculations and employee record
+          management using core OOP principles. Features an abstract Employee class with concrete subclasses for
+          different employee types (full-time, part-time). Terminal-based interface handles data entry, salary
+          computation, and payroll report generation, optimized for large datasets with minimal computation time.</p>
+        <div class="project-tech">
+          <span class="tech-chip">Java</span>
+          <span class="tech-chip">OOP</span>
+          <span class="tech-chip">Abstract Classes</span>
+          <span class="tech-chip">Inheritance</span>
+          <span class="tech-chip">Polymorphism</span>
+        </div>
+        <a href="https://github.com/rohitgunjal9730/Employee-Payroll-System" target="_blank" class="project-link"
+          style="margin-top:8px; display:inline-flex;">View on GitHub →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div>
+      <div class="footer-name">Rohit Kisan Gunjal</div>
+      <div class="footer-info">Software Engineer · Ahmednagar, Maharashtra</div>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:gunjalrohitk9730@gmail.com" class="footer-link">Email</a>
+      <a href="https://linkedin.com/in/rohit-gunjal" class="footer-link" target="_blank">LinkedIn</a>
+      <a href="https://github.com/rohitgunjal9730" class="footer-link" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <!-- SHARE BUTTON -->
+  <div class="share-container">
+    <button class="share-btn" id="shareBtn" aria-label="Share Portfolio">
+      <span class="share-icon">🔗</span>
+    </button>
+    <div class="share-tooltip" id="shareTooltip">Copy Link</div>
+  </div>
+
+  <script>
+    // Share Functionality
+    const shareBtn = document.getElementById('shareBtn');
+    const shareTooltip = document.getElementById('shareTooltip');
+
+    shareBtn.addEventListener('click', async () => {
+      const shareData = {
+        title: 'Rohit Kisan Gunjal – Developer Portfolio',
+        text: 'Check out Rohit Gunjal\'s portfolio - Full Stack Developer specializing in Java, Spring Boot, and .NET Core.',
+        url: window.location.href
+      };
+
+      if (navigator.share && navigator.canShare && navigator.canShare(shareData)) {
+        try {
+          await navigator.share(shareData);
+        } catch (err) {
+          console.error('Share failed:', err);
+          copyToClipboard();
+        }
+      } else {
+        copyToClipboard();
+      }
+    });
+
+    function copyToClipboard() {
+      const url = window.location.href;
+
+      // Attempt using modern Clipboard API first
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(() => {
+          showSuccess();
+        }).catch(err => {
+          console.error('Clipboard API failed, trying fallback', err);
+          fallbackCopyTextToClipboard(url);
+        });
+      } else {
+        fallbackCopyTextToClipboard(url);
+      }
+    }
+
+    function fallbackCopyTextToClipboard(text) {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+
+      // Ensure it's not visible
+      textArea.style.position = "fixed";
+      textArea.style.left = "-9999px";
+      textArea.style.top = "0";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+
+      try {
+        const successful = document.execCommand('copy');
+        if (successful) showSuccess();
+      } catch (err) {
+        console.error('Fallback copy failed', err);
+      }
+
+      document.body.removeChild(textArea);
+    }
+
+    function showSuccess() {
+      shareTooltip.textContent = 'Copied!';
+      shareTooltip.classList.add('visible');
+      shareBtn.classList.add('active');
+
+      setTimeout(() => {
+        shareTooltip.classList.remove('visible');
+        shareBtn.classList.remove('active');
+        setTimeout(() => {
+          shareTooltip.textContent = 'Copy Link';
+        }, 300);
+      }, 2000);
+    }
+
+    // Custom cursor
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx + 'px';
+      cursor.style.top = my + 'px';
+    });
+
+    function animateRing() {
+      rx += (mx - rx) * 0.25;
+      ry += (my - ry) * 0.25;
+      ring.style.left = rx + 'px';
+      ring.style.top = ry + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 100);
+          // Animate bar fills
+          entry.target.querySelectorAll('.bar-fill').forEach(bar => {
+            const w = bar.style.getPropertyValue('--w') || bar.getAttribute('style').match(/--w:([\d.]+)/)?.[1];
+            if (w) { bar.style.transform = `scaleX(${w})`; bar.classList.add('animate'); }
+          });
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.edu-item, .project-card').forEach(el => observer.observe(el));
+
+    // Bar fill on table visible
+    const tableObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.bar-fill').forEach(bar => {
+            const match = bar.getAttribute('style').match(/--w:([\d.]+)/);
+            if (match) bar.style.transform = `scaleX(${match[1]})`;
+          });
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('table').forEach(t => tableObserver.observe(t));
+
+    // Typewriter Effect
+    const typeTextSpan = document.querySelector('.typewriter-text');
+    const roles = ["Full Stack Developer", "Java Developer", "Software Engineer"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
+
+    function type() {
+      const currentRole = roles[roleIndex];
+
+      if (isDeleting) {
+        typeTextSpan.textContent = currentRole.substring(0, charIndex - 1);
+        charIndex--;
+        typeSpeed = 50;
+      } else {
+        typeTextSpan.textContent = currentRole.substring(0, charIndex + 1);
+        charIndex++;
+        typeSpeed = 100;
+      }
+
+      if (!isDeleting && charIndex === currentRole.length) {
+        isDeleting = true;
+        typeSpeed = 2000; // Pause at end
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        typeSpeed = 500; // Pause before new word
+      }
+
+      setTimeout(type, typeSpeed);
+    }
+    document.addEventListener('DOMContentLoaded', type);
+
+    // Back to Top Button Logic
+    const backToTopBtn = document.createElement('button');
+    backToTopBtn.innerHTML = '↑';
+    backToTopBtn.className = 'back-to-top';
+    document.body.appendChild(backToTopBtn);
+
+    // Scroll to top on click
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    // Magnetic Buttons
+    const magneticBtns = document.querySelectorAll('.btn');
+    magneticBtns.forEach(btn => {
+      btn.addEventListener('mousemove', e => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translate(0, 0)';
+      });
+    });
+
+    // Interactive Background (Canvas)
+    const canvas = document.getElementById('bg-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    class Particle {
+      constructor() {
+        this.reset();
+      }
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.vx = (Math.random() - 0.5) * 0.5;
+        this.vy = (Math.random() - 0.5) * 0.5;
+        this.size = Math.random() * 2;
+      }
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+      }
+      draw() {
+        ctx.fillStyle = 'rgba(56, 189, 248, 0.5)';
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    for (let i = 0; i < 50; i++) particles.push(new Particle());
+
+    function animateBg() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animateBg);
+    }
+    animateBg();
+  </script>
+
+</body>
+
+</html>
